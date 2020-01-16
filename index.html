@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Will Smith Likes You. And so do other people.</title>
+
+		<style>
+			
+			/* Basic CSS comment */	
+			body {
+				background: #BBB;
+				color: white;
+				width: 960px;
+				margin: 0 auto;
+			}
+
+			h1 {
+				font-size: 50px;
+				color: #333	;
+			}
+
+			img {
+				margin: 0 auto;
+				margin-top: 50px;
+			}
+
+			p {
+				font-family: graffiti, sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 80px;
+				color: #0bd333;
+				margin: 0;
+				white-space: nowrap;
+			}
+
+		</style>
+
+
+	</head>
+ 	
+	<body>
+		<!-- <h1>Hello Sam!</h1> -->
+		<!-- <img src="https://www.billboard.com/files/styles/article_main_image/public/media/will-smith-fresh-prince-billboard-1548.jpg" alt="Fresh Prince"> -->
+	</body>
+
+	<script type="text/javascript">
+		/* This is an event
+		alert("I'm annoying"); */
+		var username = prompt("Hello, enter yer name");
+		var car = new Array("BMW", "1991 Chevrolet Lumina as featured in Season 4 of the <p>Fresh Prince</p>", "Cab, with a licence plate that says <p>'Fresh'</p> and dice in the mirror");
+
+		if(username==="Chris") {
+
+			document.write("<img src='https://images.ladbible.com/thumbnail?type=jpeg&url=http://20.theladbiblegroup.com/s3/content/135de839580a40c3c096fefa905dcb91.jpg&quality=70&width=720' alt='Fresh Prince'>")
+			document.write("<h1>Hello " + username + ", you won a " + car[2] + "!</h1>");
+
+		} 
+		else if(username==="Sam") {
+			document.write("<img src='https://www.imcdb.org/i229169.jpg' alt='Chevrolet'>")
+			document.write("<h1>Hello " + username + ", you won a " + car[1] + "!</h1>");
+
+		}
+
+		else {
+			// document.write("<img src='https://www.billboard.com/files/styles/article_main_image/public/media/will-smith-fresh-prince-billboard-1548.jpg' alt='Fresh Prince'>")
+			document.write("<img src='https://www.billboard.com/files/styles/article_main_image/public/media/will-smith-fresh-prince-billboard-1548.jpg' alt='Fresh Prince'>" + "<h1>Hello " + username + "! Try refreshing and entering 'Sam' or 'Chris' to win a special prize!");
+		}
+
+		
+		
+
+	</script>
+
+</html>
